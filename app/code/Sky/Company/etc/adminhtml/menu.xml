@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Sky. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Sky_Company::sky_company_index" title="Company Type" module="Sky_Company"  sortOrder="20" dependsOnModule="Sky_Company" action="company/company/index" resource="Sky_Company::sky_company_index"/>
+<!--AddMenu-->
+    </menu>
+</config>

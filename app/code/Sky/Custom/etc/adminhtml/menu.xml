@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Sky. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Sky_Custom::sky_customgrid_index" title="Vendors" module="Sky_Custom"  sortOrder="20" dependsOnModule="Sky_Custom" action="custom/customgrid/index" resource="Sky_Custom::sky_customgrid_index"/>
+<!--AddMenu-->
+    </menu>
+</config>

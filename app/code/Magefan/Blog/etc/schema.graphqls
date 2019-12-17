@@ -1,0 +1,37 @@
+type Query {
+    blogs
+    (
+        post_id : Int @doc (description : "Post Id Id")
+    ): [blogs]
+    @resolver (class : "Magefan\\Blog\\Model\\BlogResolver")
+
+    author (
+       user_id: Int
+   ): [author]
+    @resolver (class : "Magefan\\Blog\\Model\\AutherResolver")
+}
+
+type blogs @doc (description : "Order Information"){
+    post_id : Int @doc (description : "Order Id")
+    title: String
+    content: String
+    identifire: String
+    content_heading: String
+    is_active: Int
+    author_id: Int
+    author: [author]
+}
+
+type author @doc (description : "Order shipped for a specific customer"){
+    user_id : Int @doc (description : "User Id")
+    username: String
+    firstname: String
+    lastname: String
+    email: String
+    is_active: Int
+    blogs: [blogs]
+}
+
+
+
+

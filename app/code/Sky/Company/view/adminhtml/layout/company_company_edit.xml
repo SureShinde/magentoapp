@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+     <update handle="editor"/>
+    <body>
+	   <referenceContainer name="content">
+            <block class="Sky\Company\Block\Adminhtml\Company\Edit" name="company_company_edit"/>
+        </referenceContainer>
+		 <referenceContainer name="left">
+            <block class="Sky\Company\Block\Adminhtml\Company\Edit\Tabs" name="company_company_edit_tabs">
+				<block class="Sky\Company\Block\Adminhtml\Company\Edit\Tab\Company" name="company_company_edit_tab_company"/>
+				 <action method="addTab">
+                    <argument name="name" xsi:type="string">company_section</argument>
+                    <argument name="block" xsi:type="string">company_company_edit_tab_company</argument>
+                </action>
+				<!--CedAddTab-->
+			</block>
+        </referenceContainer>
+    </body>
+</page>

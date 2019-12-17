@@ -1,0 +1,31 @@
+{
+    "name": "codetheatres/module-customer-shipped-orders-graphql",
+    "description": "Customer Shipped Orders GraphQl",
+    "type": "magento2-module",
+    "version": "1.0.1",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "git"
+        }
+    ],
+    "authors": [
+        {
+            "name": "surendra kumar",
+            "email": "rohityadav786yadav@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "CodeTheatres\\CustomerShippedOrdersGraphQl\\": ""
+        }
+    }
+}
